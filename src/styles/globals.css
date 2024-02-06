@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+* { box-sizing: border-box; padding: 0; margin: 0; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+html { scroll-behavior: auto !important; }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+body { background: #000000; margin: 0; padding: 0; font-family: 'Roboto'; font-style: normal; font-size: 14px; color: #FFFFFF; line-height: normal; font-weight: 400; }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+textarea { resize: none; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+ul li { list-style: none; }
+
+body.open_nav { overflow: hidden; }
+
+.main_wrap { overflow: hidden; }
+
+
+
+.main_header.fixed_wrap { background: #000000; }
+.main_header .header_wrap .ferien-header-block .ferien-header-nav.slide { @apply translate-x-0 }
+.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a { @apply lg:text-lg text-extralightgray leading-[1.23] tracking-[0.05em] block lg:my-[30px] uppercase relative no-underline after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:transition-all after:duration-[0.4s] after:ease-in-out after:scale-0 after:border-b-2 after:border-solid after:border-extralightgray lg:hover:after:scale-100 text-[22px] my-[10px] }
+.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li.active a::after { @apply scale-100; }
+.main_header .header_wrap .ferien-header-block .menu-btn { @apply relative lg:hidden flex items-center z-[1111] }
+.main_header .header_wrap .ferien-header-block .menu-btn .toggle-btn { @apply relative flex w-[24px] h-[18px] items-center justify-center }
+.main_header .header_wrap .ferien-header-block .menu-btn .toggle-btn span { @apply relative block w-[24px] h-[2px] bg-lightBlack duration-[0.3s] delay-[0.1s] after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-9px] after:bg-lightBlack after:w-[24px] after:h-[2px] after:duration-[0.3s] after:delay-[0.1s] before:content-[''] before:absolute before:left-0 before:right-0 before:top-[-9px] before:w-[24px] before:h-[2px] before:bg-lightBlack before:duration-[0.3s] before:delay-[0.1s] }
+.main_header .header_wrap .ferien-header-block .menu-btn .toggle-btn.active span { @apply after:bottom-0 after:rotate-45 before:top-0 before:-rotate-45 bg-transparent }
+.main_header.fixed_wrap .header_wrap .ferien-header-block .menu-btn .toggle-btn span { @apply bg-extralightgray after:bg-extralightgray before:bg-extralightgray }
+.main_header.fixed_wrap .header_wrap .ferien-header-block .menu-btn .toggle-btn.active span { @apply bg-transparent }
