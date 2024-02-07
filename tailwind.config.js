@@ -6,9 +6,6 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      roboto: ["Roboto", "sans-serif"],
-    },
     extend: {
       container: {
         center: true,
@@ -34,8 +31,8 @@ module.exports = {
         rgbaWhite: "rgba(255, 255, 255, 0.3)",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(circle at 45% 51%, #757575, rgba(117, 117, 117, 0.97) 17%, rgba(117, 117, 117, 0.68) 37%, rgba(117, 117, 117, 0) 69%)",
         "gradient-linear": "linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%)",
+        "banner-image": "url(../assets/images/banner-image.jpg)",
       },
       fontSize: {
         h1: ["34px", "1.23"],

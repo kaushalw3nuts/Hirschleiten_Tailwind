@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HomeBanner from "@/components/layout/HomeBanner";
+import Holiday from "@/components/Holiday";
 
 
 
@@ -12,6 +13,7 @@ export default function Home() {
         <title>Homepage</title>
       </Head>
       <HomeBanner />
+      <Holiday />
     </>
   );
 }

@@ -33,3 +33,17 @@ body.open_nav { overflow: hidden; }
 .main_header .header_wrap .ferien-header-block .menu-btn .toggle-btn.active span { @apply after:bottom-0 after:rotate-45 before:top-0 before:-rotate-45 bg-transparent }
 .main_header.fixed_wrap .header_wrap .ferien-header-block .menu-btn .toggle-btn span { @apply bg-extralightgray after:bg-extralightgray before:bg-extralightgray }
 .main_header.fixed_wrap .header_wrap .ferien-header-block .menu-btn .toggle-btn.active span { @apply bg-transparent }
+
+
+.banner_wrapper .bnr_wrap .imgbox { @apply after:content-[''] after:absolute 2xl:after:-top-[155px] 2xl:after:-left-[205px] after:h-[368px] after:w-[514px] after:bg-black after:-rotate-45 xl:after:-top-[280px] xl:after:-left-[205px] lg:after:-top-[210px] lg:after:-left-[290px] md:after:-top-[360px] md:after:-left-[205px] after:-top-[360px] after:-left-[205px] before:content-[''] before:absolute 2xl:before:-right-[76px] 2xl:before:-bottom-[27px] before:h-[120px] before:w-[220px] before:bg-black before:-rotate-45 xl:before:-right-[100px] xl:before:-bottom-[27px] lg:before:-right-[100px] lg:before:-bottom-[50px] lg:before:block md:before:hidden before:hidden }
+.banner_wrapper .bnr_wrap .imgbox .bnr_btn { @apply absolute xl:right-[182px] xl:bottom-[40px] lg:right-[150px] lg:bottom-[50px] lg:block lg:w-auto right-auto bottom-[50px] flex justify-center w-full }
+.banner_wrapper .bnr_wrap .imgbox .bnr_btn a { @apply text-[18px] text-white leading-[1.23] tracking-[0.05em] block md:pt-[18px] md:pb-[14px] md:pl-[20px] md:pr-[20px] p-[12px] uppercase border border-solid border-white transition-all duration-[0.4s] ease-in-out hover:bg-extralightgray }
+
+
+.word_wrap .word { transition: transform 0.6s ease; transform: translateY(100%); opacity: 0; }
+.word_wrap.visible .word { animation: splash .5s forwards ease-in-out; }
+@keyframes splash { 
+	from { transform: translateY(100%); opacity: 0; } 
+   
+	to { transform: translateY(0%); opacity: 1; } 
+}
