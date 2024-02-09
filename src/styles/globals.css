@@ -40,6 +40,7 @@ body.open_nav { overflow: hidden; }
 .banner_wrapper .bnr_wrap .imgbox .bnr_btn a { @apply text-[18px] text-white leading-[1.23] tracking-[0.05em] block md:pt-[18px] md:pb-[14px] md:pl-[20px] md:pr-[20px] p-[12px] uppercase border border-solid border-white transition-all duration-[0.4s] ease-in-out hover:bg-extralightgray }
 
 
+.holiday_section p { @apply 2xl:text-p lg:text-[20px] lg:leading-normal md:text-[18px] text-[16px] leading-normal md:leading-normal tracking-[0.05em] text-lightBlack }
 .word_wrap .word { transition: transform 0.6s ease; transform: translateY(100%); opacity: 0; }
 .word_wrap.visible .word { animation: splash .5s forwards ease-in-out; }
 @keyframes splash { 
@@ -47,3 +48,14 @@ body.open_nav { overflow: hidden; }
    
 	to { transform: translateY(0%); opacity: 1; } 
 }
+
+
+.dream .dream_imgbox { @apply 2xl:max-w-[1149px] xl:max-w-[1000px] xl:w-auto lg:w-full md:w-full  relative after:content-[''] after:absolute after:-left-[117px] 2xl:after:-top-[114px] after:bg-black after:w-[233px] after:h-[230px] after:-rotate-45 xl:after:-top-[170px] lg:after:-top-[114px] md:after:-top-[114px] md:after:block after:hidden }
+.dream .dream_detailbox { @apply 2xl:max-w-[860px] xl:max-w-[585px] lg:max-w-[860px] bg-extralightWhite relative 2xl:-ml-[82px] xl:-ml-[20px] xl:mt-0 lg:ml-0 lg:-mt-[55px] m-0 after:content-[''] after:absolute after:-right-[58px] after:-bottom-[24px] after:bg-black after:w-[167px] after:h-[90px] after:-rotate-45 md:after:block after:hidden }
+.dream .dream_detailbox .dream_text p { @apply 2xl:text-[20px] leading-[1.8] tracking-[0.05em] text-lightBlack 2xl:pb-[28px] xl:text-[18px] xl:leading-[1.6] xl:pb-[26px] lg:text-[18px] lg:leading-[1.5] lg:pb-[18px] md:text-[16px] md:leading-[1.5] md:pb-[16px] text-[16px] pb-[16px] }	
+.dream .dream_detailbox .dream_text .dream_btn a { @apply block text-extralightgray lg:text-[20px] md:text-[18px] text-[16px] tracking-[0.05em] leading-[1.38] border border-solid border-extralightgray px-[20px] py-[10px] transition-all duration-[0.4s] ease-in-out hover:bg-white }
+
+
+.teaser_section { @apply relative transition-all duration-[0.4s] ease-in-out 2xl:hover:translate-y-[85px] xl:hover:translate-y-[50px] after:content-[''] after:absolute after:w-full after:h-[409px] after:bottom-0 after:left-0 after:opacity-[0.23] after:bg-gradient-linear }
+.teaser_section .teasure_btn a { @apply text-white text-[20px] tracking-[0.05em] leading-[1.38] border border-solid border-white 2xl:px-[20px] 2xl:py-[10px] transition-all duration-[0.4s] ease-in-out block uppercase hover:bg-extralightgray xl:px-[15px] xl:py-[10px] }
+.teaser_section:hover .teasure_btn { @apply opacity-100 visible }
